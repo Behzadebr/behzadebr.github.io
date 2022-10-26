@@ -196,6 +196,16 @@ hr.light-100 {
   }
 }
 @media (max-width: 768px) {
+  
+  .navbar-collapse {
+    background-color: #e7f6f2;
+  }
+
+  .dropdown-menu {
+    width: 70%;
+    background-color: #51809d;
+  }
+  
   .carousel-caption {
     top: 45%;
   }
