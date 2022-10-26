@@ -10,6 +10,30 @@ body {
   background-color: #06283d;
 }
 
+h1,
+h2 {
+  color: #e7f6f2;
+}
+
+.navbar {
+  padding: 0;
+  background-color: #e7f6f2 !important;
+  height: 4rem;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+}
+
+.nav-item {
+  padding-left: 50px;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+  color: rgb(18, 18, 44);
+}
+
 .about {
   padding-top: 2rem;
   padding-left: 3rem;
@@ -19,35 +43,14 @@ body {
   color: #e7f6f2;
 }
 
+.carousel {
+  width: 70%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
 .padding {
   padding-bottom: 2rem;
-}
-
-.scrolling-wrapper {
-  overflow-x: auto;
-}
-
-div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-div.scrollmenu a:hover {
-  background-color: #777;
-}
-
-h1,
-h2 {
-  color: #e7f6f2;
 }
 
 #aboutme {
@@ -76,31 +79,6 @@ h2 {
   opacity: 0.9;
 }
 
-.navbar {
-  padding: 0;
-  background-color: #e7f6f2 !important;
-  height: 4rem;
-}
-
-.navbar-brand {
-  padding-left: 50px;
-}
-
-.nav-item {
-  padding-left: 50px;
-}
-
-.nav-link {
-  font-size: 1.2em !important;
-  color: rgb(18, 18, 44);
-}
-
-.carousel {
-  width: 70%;
-  padding-top: 2rem;
-  padding-left: 2rem;
-}
-
 .btn-primary {
   background-color: #467ea1;
   border: 1px solid #467ea1;
@@ -126,8 +104,26 @@ h2 {
   width: 95%;
 }
 
-.gif {
-  max-width: 100%;
+.scrolling-wrapper {
+  overflow-x: auto;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
 }
 
 .social a {
@@ -196,6 +192,15 @@ hr.light-100 {
   }
 }
 @media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #e7f6f2;
+  }
+
+  .dropdown-menu {
+    width: 70%;
+    background-color: #51809d;
+  }
+
   .carousel-caption {
     top: 45%;
   }
