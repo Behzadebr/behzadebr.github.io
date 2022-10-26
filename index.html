@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Behzad Ebrahimi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/86e3c20715.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo6.png" alt="" width="60" height="60"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#GameProjects"
+                    >Game Development</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#WebProjects"
+                    >Web/iOS Development</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#CoastalProjects"
+                    >Coastal Engineering</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#connect">Connect</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="about" class="about container-fluid">
+      <div class="row">
+        <div class="col-lg-9">
+          <h2>About me...</h2>
+          <p id="aboutme">
+            I am Behzad Ebrahimi, a PhD student at the University of Southern
+            California. I'm pursuing my PhD degree in Coastal Engineering at the
+            department of civil and Environment Engineering, and my master's
+            degree in Computer Science. As a PhD student, I am working as
+            graduate research assistant, and graduate teaching assistant. In the
+            research side, I'm involved in several different projects related to
+            Coastal Engineering, Environment Engineering, and Computer Science.
+            We recently published our paper in Nature, the most prestigious
+            scientific journal, and have another article under review by Energy
+            journal. On the teaching side, I am mostly in charge of teaching
+            programming languages to undergraduate students. I was awarded as
+            the best teaching assistant in 2021-22 academic year. I'm currently
+            focusing on a multidisciplinary project, using game engines and
+            advanced hydrodynamics to create a ship simulator for operational
+            readiness in maritime and littoral operations(supported by the US
+            Army).
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1tL-8Csf-abrJ2-Q42hkn9l-zlDcO6n_A/view?usp=sharing"
+            ><button class="btn btn-primary">View CV</button></a
+          >
+        </div>
+        <div class="col-lg-3">
+          <div
+            id="carouselFade"
+            class="carousel slide carousel-fade text-center"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/me1.png" class="img-fluid" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/me5.png" class="img-fluid" alt="..." />
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="img/me3.png" class="img-fluid" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="img/me4.png" class="img-fluid" alt="..." />
+              </div> -->
+              <div class="carousel-item">
+                <img src="img/me2.png" class="img-fluid" alt="..." />
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="img/me6.png" class="img-fluid" alt="..." />
+              </div> -->
+            </div>
+            <div><p>My game character</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- CS Projects -->
+    <div id="GameProjects" class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1>Game Development</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!--- Cards -->
+    <div class="deck container-fluid padding">
+      <div class="row padding">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/cs_wavelab.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">OSU Wave Lab</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/card2.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Flood AR Game</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/cs_seaside.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Seaside OR Beach</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/cs_wavemaker.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Niagara Wave Maker</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--- iOS/Web -->
+    <div id="WebProjects" class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1>Web/iOS Development</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!--- Cards -->
+    <div class="deck container-fluid padding">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/cs_web.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Movie Database Website</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/cs_app.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Movie Database iOS App</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Coastal Projects -->
+    <div id="CoastalProjects" class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1>Coastal Engineering Projects</h1>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!--- Cards -->
+    <div class="deck container-fluid padding">
+      <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_coral.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Coral Reef Simulation</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_heat.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">HPC Heat Loss</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_geoclaw.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Tsunami Simulation</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_seaside.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Seaside Wavemaker</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_landslide.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Alaska Landslide</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_kelp.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Aquatic Vegetation</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_mix.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Wave vs Current</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_debris.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Debris Tracking</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/ce_moor.png" class="card-img-top img-fluid" />
+            <div class="card-body">
+              <h4 class="card-title text-center">Mooring Lines</h4>
+              <hr />
+              <a href="#">
+                <div class="col text-center">
+                  <button class="btn btn-primary">View more</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Connect -->
+    <div id="connect" class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Let's Connect</h2>
+          <div class="col-12 social">
+            <a href="mailto:bebrahim@usc.edu"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/behzad-ebrahimi-46349a229"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/behzad.ebr/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/Behzad48997499"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCT7YpsdWgkDnyAZM-XondUw"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row text-center">
+          <h5>&copy; behzadebrahimi.com</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
