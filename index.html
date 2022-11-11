@@ -16,6 +16,20 @@
       src="https://kit.fontawesome.com/86e3c20715.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".popup-modal").magnificPopup({
+          type: "inline",
+          midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+      });
+    </script>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -26,7 +40,7 @@
     ></script>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img src="img/logo6.png" alt="" width="60" height="60"
@@ -168,25 +182,63 @@
             <div class="card-body">
               <h4 class="card-title text-center">OSU Wave Lab</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#osuPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="osuPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/ezGYd_Im9nA"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card">
-            <img src="img/cs_seaside.png" class="card-img-top img-fluid" />
+            <img src="img/cs_ar.png" class="card-img-top img-fluid" />
             <div class="card-body">
               <h4 class="card-title text-center">Flood AR Game</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#arPopup"
+                id="headerVideoLink2"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="arPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/yg3zie8UANg?"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -196,11 +248,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Seaside OR Beach</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#seasidePopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="seasidePopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/cPAMwMClecQ"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -210,11 +281,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Niagara Wave Maker</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#niagaraPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="niagaraPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/226h4VoLH-I"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -238,11 +328,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Movie Database Website</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#webPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="webPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/4jE4xZaG2ZQ"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -252,11 +361,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Movie Database iOS App</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#appPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="appPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/FFYaDQS2dtw"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -281,11 +409,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Coral Reef Simulation</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#coralPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="coralPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/p4wxvXPb8N0"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -295,11 +442,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">HPC Heat Loss</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#hpcPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="hpcPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/cwnvRbuNCxw"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -309,11 +475,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Tsunami Simulation</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#geoclawPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="geoclawPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/VIWfHzbbfc8"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -323,11 +508,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Seaside Wavemaker</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#WMPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="WMPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/uK04F-JwR4c"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -337,11 +541,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Alaska Landslide</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#landslidePopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="landslidePopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/lgP56QoVpO0"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -351,11 +574,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Aquatic Vegetation</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#kelpPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="kelpPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/CGTnI4Z3c4E"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -365,11 +607,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Wave vs Current</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#interactionPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="interactionPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/JWxdAIfFuFU"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -379,11 +640,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Debris Tracking</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#debrisPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="debrisPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/u35fot2C-hE"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -393,11 +673,30 @@
             <div class="card-body">
               <h4 class="card-title text-center">Mooring Lines</h4>
               <hr />
-              <a href="#">
+              <a
+                href="#moorPopup"
+                id="headerVideoLink"
+                target="_blank"
+                class="popup-modal"
+              >
                 <div class="col text-center">
-                  <button class="btn btn-primary">View more</button>
+                  <button class="btn btn-primary">View Demo</button>
                 </div>
               </a>
+              <div
+                id="moorPopup"
+                class="clip mfp-hide embed-responsive embed-responsive-21by9"
+              >
+                <iframe
+                  class="embed-responsive-item"
+                  width="854"
+                  height="480"
+                  src="https://www.youtube.com/embed/fpFzG0YHHAc"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
